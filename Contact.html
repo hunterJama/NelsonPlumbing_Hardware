@@ -1,0 +1,96 @@
+
+<!DOCTYPE html>
+<html>
+<style>
+  .center {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 50%;
+}
+
+</style>
+<style>
+    body {
+      background-image: url('./images/bk1.jpg');
+      width: auto;
+       
+    }
+    </style> 
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Contact</title>
+<link rel="stylesheet" href="./css/style.css">
+</head>
+
+
+<body>
+    <header>
+        <ul>
+            <li><a href="index.html">Home</a> </li>
+            <li><a href="about.html">About Us</a></li>
+            <li><a href="Contact.html">Contact</a></li>
+        </ul>
+        </nav>
+        <h1> Contact </h1>
+    </header>
+    <p></p>
+    <div class="mbDiv">
+        <p>This form is for contacting developer</p>
+    </div>
+   
+    <h2>Contact Form</h2>
+    <form class="mDiv" action= "chadanenelson1@gmail.com"
+
+    method= "POST"
+    
+    enctype= "multipart/form-data">
+        <fieldset>
+            <legend>User information</legend>
+            <label>Enter your full name</label><br>
+            <input type="text" name="name"><br>
+            <label>Enter Email</label><br>
+            <input type="email" name="email"><br>
+            <label>Subject</label><br>
+            <input type ="subject" name="subject"><br>
+            
+            <br> Message: <br>
+            <textarea></textarea><br>
+            <input type="submit" value="send" id="send" onclick="myFunction()">
+            
+                         
+             
+            <script>
+                function myFunction() {
+                  alert("Thank you for contacting us ");
+                }
+                
+                </script>
+        </fieldset>
+    </form>
+    
+    </div>
+    <footer>
+        <div class="center" class="mxDiv"  >
+            <table width="100%">
+                <tr><td colspan="2">Contact us for any concerns</td><td colspan="2">Location</td><td></td></tr>
+                <tr><td >Telephone: 8765353700</td>
+                    <td></td>
+                    <td> Main Street Frontier, Port Maria, St.Mary, Jamaica</td>
+                    <td> </td>
+                    <td>Nelsons Plumbing and Hardware Supplies, Jamaica<br/>
+                        All Rights Reserved <br/>Release Version 2.0</td>
+                </tr>
+                <tr><td></td></tr>
+                <tr>  </tr>
+            </table>
+        </div>
+
+   </footer>
+    
+    
+      
+</body>
+
+
+</html>

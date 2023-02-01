@@ -1,0 +1,177 @@
+
+<!DOCTYPE html>
+<html>
+<style>
+  .center {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 50%;
+}
+</style>
+
+   <style>
+      body {
+      background-image: url('./images/Background.jpg');
+     
+    }
+   </style>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>About Us </title>
+
+<link rel="stylesheet" href="./css/style.css">
+</head>
+<body>
+    <header>
+        <ul>
+            <li><a href="index.html">Home</a> </li>
+            <li><a href="about.html">About Us</a></li>
+            <li><a href="Contact.html">Contact</a></li>
+        </ul>
+        </nav>
+        <h1 >About us </h1>
+    
+    <div class="mbDiv">
+      <p>Nelsons Plumbing and Hardware Supplies is a business that is located at Main Street, 
+        Froniter, Port maria, St.Mary directly in front of JPS or Side Port Maria Fire Station.
+         We specialize in the selling of Steel, Lumber, Cement, Thinsets, Blocks, Sand, Gravel, Ply, Tiles,
+         Electrical Supplies, Plumbing Supplies, Furniture Supplies, Paints, Doors and so much more.
+        We offer the best deals around town with very hospitable staff and environment.
+      
+        
+      </p>
+      <p >We also offer plumbing Services, so contact us and get your plumbing work done.</p>
+    </header>
+    </div>
+      
+      <link rel="stylesheet" href="./css/slide.css">
+      <meta name="viewport" content="width=device-width, initial-scale=1">
+        <div class="slideshow-container">
+  
+          <!-- Full-width images with number and caption text -->
+          <div class="mySlides fade" style="text-align:center">
+            <div class="numbertext">1 / 9</div>
+            <img src="./images/cement.png" style="width:49%">
+            <div class="text"> Cement</div>
+          </div>
+        
+          <div class="mySlides fade" style="text-align:center">
+            <div class="numbertext">2 /  9</div>
+            <img src="./images/tileo.jpg" style="width:49%">
+            <div class="text">Tile</div>
+          </div>
+        
+          <div class="mySlides fade" style="text-align:center">
+            <div class="numbertext">3 /  9</div>
+            <img src="./images/Steel.jpg" style="width:49%">
+            <div class="text">Steel </div>
+          </div>
+
+          <div class="mySlides fade" style="text-align:center">
+            <div class="numbertext">4 /  9</div>
+            <img src="./images/lumeber.jpg" style="width:49%">
+            <div class="text">Lumber</div>
+          </div>
+
+          <div class="mySlides fade" style="text-align:center">
+            <div class="numbertext" > 5 /  9</div>
+            <img src="./images/blocks.jpg" style="width:49%">
+            <div class="text">Blocks </div>
+          </div>
+
+          
+          <div class="mySlides fade" style="text-align:center">
+            <div class="numbertext" > 6 /  9</div>
+            <img src="./images/metaldoor3.jpg" style="width:49%">
+            <div class="text">Door </div>
+          </div>
+
+          <div class="mySlides fade" style="text-align:center">
+            <div class="numbertext" > 7 /  9</div>
+            <img src="./images/slidewindow.jpg" style="width:49%">
+            <div class="text">Slide Window </div>
+          </div>
+
+          <div class="mySlides fade" style="text-align:center">
+            <div class="numbertext" > 8 /  9</div>
+            <img src="./images/400dyna.jpg" style="width:44%">
+            <div class="text">Tinset (Dyna 400) </div>
+          </div>
+
+          <div class="mySlides fade" style="text-align:center">
+            <div class="numbertext" > 9 /  9</div>
+            <img src="./images/300dyna.jpg" style="width:44%">
+            <div class="text">Tinset (Dyna 300) </div>
+          </div>
+        
+        
+          <!-- Next and previous buttons -->
+          <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+          <a class="next" onclick="plusSlides(1)">&#10095;</a>
+        </div>
+        <br>
+        
+        <!-- The dots/circles -->
+        <div style="text-align:center">
+          <span class="dot" onclick="currentSlide(1)"></span>
+          <span class="dot" onclick="currentSlide(2)"></span>
+          <span class="dot" onclick="currentSlide(3)"></span>
+          <span class="dot" onclick="currentSlide(4)"></span>
+          <span class="dot" onclick="currentSlide(5)"></span>
+          <span class="dot" onclick="currentSlide(6)"></span>
+          <span class="dot" onclick="currentSlide(7)"></span>
+          <span class="dot" onclick="currentSlide(8)"></span>
+          <span class="dot" onclick="currentSlide(9)"></span>
+          
+        </div>
+        <script>
+          var slideIndex = 1;
+          showSlides(slideIndex);
+          
+          function plusSlides(n) {
+            showSlides(slideIndex += n);
+          }
+          
+          function currentSlide(n) {
+            showSlides(slideIndex = n);
+          }
+          
+          function showSlides(n) {
+            var i;
+            var slides = document.getElementsByClassName("mySlides");
+            var dots = document.getElementsByClassName("dot");
+            if (n > slides.length) {slideIndex = 1}    
+            if (n < 1) {slideIndex = slides.length}
+            for (i = 0; i < slides.length; i++) {
+                slides[i].style.display = "none";  
+            }
+            for (i = 0; i < dots.length; i++) {
+                dots[i].className = dots[i].className.replace(" active", "");
+            }
+            slides[slideIndex-1].style.display = "block";  
+            dots[slideIndex-1].className += " active";
+          }
+        </script>
+        
+     
+  <footer>
+    <div class="center" class="mxDiv"  >
+        <table width="100%">
+            <tr><td colspan="2">Contact us for any concerns</td><td colspan="2">Location</td><td></td></tr>
+            <tr><td >Telephone: 8765353700</td>
+                <td></td>
+                <td> Main Street Frontier, Port Maria, St.Mary, Jamaica</td>
+                <td> </td>
+                <td>Nelsons Plumbing and Hardware Supplies, Jamaica<br/>
+                    All Rights Reserved <br/>Release Version 2.0</td>
+            </tr>
+            <tr><td></td></tr>
+            <tr>  </tr>
+        </table>
+    </div>
+
+</footer>
+      
+</body>
+</html>

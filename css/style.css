@@ -1,0 +1,113 @@
+body{
+    background: rgb(red, green, blue);
+    color:white;
+    font-family: 'Courier New', Courier, monospace;
+    margin:0;
+    padding: 0;
+}
+header{
+    
+    background: rgb(16, 114, 160);
+    color:rgb(206, 240, 17);
+    padding:40px;
+    font-weight: bold;
+    
+}
+section{
+    background:white;
+    color:gray;
+    padding: 20000px;
+    display: flex;
+    flex-direction: row;
+}
+
+ul{
+    margin: 0;
+    padding: 0;
+    list-style-type: none;
+
+}
+li{
+    display: inline-block;
+    margin: 20px;
+}
+a{
+    text-decoration: underline;
+    color:rgb(206, 240, 17);
+    font-weight: bold;
+}
+a:hover {
+    background-color: rgb(24, 212, 81);
+  }
+footer{
+    background-color:  rgb(16, 114, 160);
+    padding: 10px 20px;
+    color:rgb(199, 252, 10);
+    font-size: 23;
+    font-weight: bold;
+}
+div {
+    display: block;
+  }
+  .mainDiv{
+      color:black;
+  }
+  .mDiv{
+    font-size: 17px;
+    color:white;
+
+}
+.mbDiv{
+  font-size: 14;
+  font-weight: bold;
+  color:rgb(199, 252, 10);
+}
+.mxDiv{
+    font-size: 14px;
+    color:black;
+    border: 5px outset rgb(59, 199, 218);
+}
+  .myDiv {
+    border: 5px outset rgb(79, 134, 236);
+    background-color:white;
+    color:black;
+    /*text-align: center;*/
+  }
+  .xDiv{
+      border: outset black;
+    background-color:rgb(170, 158, 158);
+    font-size: 16px;
+    color:rgb(116, 62, 216);
+  }
+  .a{
+      color:white;
+  }
+  .cv {
+      border: 5px outset rgb(74, 170, 235);
+      color:black;
+      background: rgb(135, 242, 248);
+  }
+
+  .header {
+    padding: 10px 16px;
+    
+  }
+  
+  /* Page content */
+  .content {
+    padding: 16px;
+  }
+  
+  /* The sticky class is added to the header with JS when it reaches its scroll position */
+  .sticky {
+    position: fixed;
+    top: 0;
+    width: 100%
+  }
+  
+  /* Add some top padding to the page content to prevent sudden quick movement (as the header gets a new position at the top of the page (position:fixed and top:0) */
+  .sticky + .content {
+    padding-top: 102px;
+  }
+
+  
